@@ -1,0 +1,126 @@
+ <html>
+ <style>
+ header
+  h1{
+    padding-top:60px;
+    font-color:#cc0000;
+  }
+  a{
+    font-size: 20px;
+    text-decoration:none;
+  }
+  a:hover{
+    color:#990099;
+  }
+  
+  #header{
+    background-color:black;
+    font-size: 60px
+    width:100%;
+    height:40px;
+  }
+  .active{
+       text-decoration: none;
+       font-size:30px;
+       color:#ffff00;
+       padding-right: 20px;
+  }
+  .active:hover{
+    color:#cccc00;
+  }
+
+ 
+  body{
+    font-family: comic-sans;
+    background-image: url("https://t4.ftcdn.net/jpg/01/28/87/37/240_F_128873778_3O5Lh7Gr23zGXPbBolSLkJXiTqSAc6jW.jpg");
+  }
+  #h2{
+    color:#b3cce6;
+    text-shadow: black;
+  }
+  #bt{
+    color:black;
+    border-color: black;
+    height:40px;
+    width:100px;
+  }
+  #bt:hover{
+    background-color: black;
+    color:white;
+    transition: all 0.5s ease-in-out;
+  }
+  form
+  #frm{
+    font-size:20px;
+  }
+  #p{
+    font-size: 20px;
+    font-family: comic-sans;
+  }
+</style>
+ <title id="t1">My First Web Page</title>
+</head>
+<script>
+
+  var a,b,c,d,e,f,g;
+  function krit(){
+document.getElementById("fn").value= a;
+document.getElementById("ln").value= b;
+document.getElementById("add").value=c;
+document.getElementById("em").value= d;
+document.getElementById("gender").value=e;
+document.getElementById("bday").value=f;
+document.getElementById("he").value=g;
+}
+  </script>
+<header id="header"> 
+  <ul>
+   <a class="active" href="home.html">Home</a>
+   <a class="active" href="Register.html">Register</a>
+   <a class="active" href="GetPost.html">Get-Post</a>
+</ul>
+</header>
+</head>
+<body>
+<p id="p"> Drop in your details to hear more about me </p>
+<form id="frm" action="/action_page.php">
+  First name:<br>
+  <input id="fn" type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input id="ln" type="text" name="lastname">
+  <br>
+  Address:<br>
+  <textarea id="add" name="Address">
+    </textarea>
+  <br>
+  E-mail:<br>
+  <input id="em" type="text" name="E-mail">
+  <br>
+ </form> 
+
+<form id="gender">
+  Gender:<br>
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+</form>
+
+<form action="/action_page.php">
+  Birthday:<br>
+  <input id="bday" type="date" name="bday" format-date:"dd/mm/yyyy">
+</form>
+
+<form id="he"><p>Highest Education:</p>
+   <input type="checkbox" name="HighSchool" value="male" checked> High School<br>
+   <input type="checkbox" name="MS" value="male"> MS<br>
+   <input type="checkbox" name="BS" value="male"> BS<br>
+   <input type="checkbox" name="BA" value="male"> BA<br>
+</form>
+<br>
+<center>
+<a  href="https://www.wikipedia.org/"> Wikipedia</a><br>
+<button id="bt" onclick=krit()> Submit </button>
+
+</center>
+</body>
+</html>
